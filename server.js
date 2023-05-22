@@ -28,7 +28,7 @@ const port = 80;
 
 var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
-var mongoUrl = 'mongodb+srv://darshan:darshanjain1412@greenpaddle.dsqvgnm.mongodb.net/?retryWrites=true&w=majority'
+var mongoUrl = 'process.env.DATABASE'
 var db;
 
 // MongoClient.connect(mongoUrl,(err,client)=>{
