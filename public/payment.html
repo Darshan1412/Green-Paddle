@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form class="payment-form" , action="/pay" , method="post">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span for="uname">full name :</span>
+                    <input id="uname" name="uname" type="text" placeholder="john deo">
+                </div>
+                <div class="inputBox">
+                    <span for="email">email :</span>
+                    <input id="email" name="email" type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span for="address">address :</span>
+                    <input id="address" name="address" type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span for="city">city :</span>
+                    <input id="city" name="city" type="text" placeholder="mumbai">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span for="state">State:</span>
+                        <input id="state" name="state" type="text" placeholder="india">
+                    </div>
+                    <div class="inputBox">
+                        <span for="zip">zip code :</span>
+                        <input id="zip" name="zip" type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="image/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span for="ccname">name on card :</span>
+                    <input name="ccname" id="ccname" type="text" placeholder="mr. john deo">
+                </div>
+                <div class="inputBox">
+                    <span for="ccnum">credit card number :</span>
+                    <input id="ccnum" name="ccnum" type="text"  placeholder="0000 0000 0000 0000" size="18" id="cr_no" minlength="19" maxlength="19">
+                </div>
+                <div class="inputBox">
+                    <span for="exp">Exp Month:</span>
+                    <input for="exp" name="ccexp" class="ccexp" type="tel" pattern="\d*" maxlength="7" placeholder="MM / YY"  placeholder="january">
+                </div>
+
+                <div class="flex">
+                   
+                    <div class="inputBox">
+                        <span for="cvv">CVV :</span>
+                        <input for="cvv" type="password" name="cvv" placeholder="000" size="1" minlength="3" maxlength="3" >
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+      <input onclick="myFunction()"  id="check" type="submit" value="proceed to checkout" class="submit-btn">
+   
+   <!-- <div class="thank">
+        <a href="/thank.html">proceed</a> 
+      </div> -->
+    </form>
+   
+    <script src="/js/payment.js"></script>
+
+</div>    
+<script>
+  
+
+</script>
+
+</body>
+</html>

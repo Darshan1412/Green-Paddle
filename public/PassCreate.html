@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="./images/olxbrowserlogo.jpg">
+    <title>Password-OLX</title>
+</head>
+
+<body id="bodypass" onload="loadfun()">
+    <div id="pass">
+        <div id="imgpass">
+            <img src="/image/Green Paddle.jpeg" alt="">
+        </div>
+        <div id="headingpass">
+            <h3>Create a password to login faster next time</h3>
+            <p id="para">You are creating a password for <b id="getemail">/b>. This will help you
+                login
+                faster next time.</p>
+        </div>
+        <div id="Pass" style="margin-bottom: 20px;">
+            <input type="password" id="newPass" placeholder="New password">
+        </div>
+        <div id="passCon">
+            <p>Use minimum 6 characters</p><br>
+        </div>
+        <div id="Pass">
+            <input type="password" id="conPass" placeholder="Confirm new password">
+        </div>
+        <div id="Pass">
+            <button onclick="createpass()">Create password</button>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

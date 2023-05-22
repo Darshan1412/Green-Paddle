@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greenPaddle</title>
+    <script src="https://kit.fontawesome.com/e9b7245f45.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    
+</head>
+<body style=" background-color: #2b2d2e;">
+   
+        
+    </div>
+ 
+    <navbar class="nav">
+        <img  src="/image/Green Paddle.jpeg" style="height: 70px; width: 100px; ">
+       
+        <ul id="header">
+            <li><a class="tag" href="/">Home</a></li>
+            <li><a class="tag" href="/explore">Explore</a></li>
+            <li><a class="tag" href="/book">Book</a></li>
+            <li><a class="tag" href="/ev.html">Ev</a></li>
+            <li><a class="tag" href="/accessories">Accessories</a></li>
+            <li><a class="tag" href="/faqs">Events</a></li>
+            <li><a class="tag" href="/contact">Contact Us</a></li>
+            <li ><a class="tag" href="views/login.html" id="login-nav" style="display: flex;">Login</a></li>
+            <li onclick="loggedinfalse()"><a class="tag" href="/" id="profile-nav" style="display: flex;">LogOut</a></li>
+            <li class="tag" onclick="forsell()">Post</li>
+            <li class="cart"><a class="tag" href="cart.html">Cart <span class="zero">0</span></a></li>
+           
+        </ul>
+    </navbar>
+    <button id="scrolltotop"><i class='bx bx-up-arrow-alt'></i></button>
+    
+    <div class="container-products">
+        <div class="product-header">
+            <h5 class="product-title tag">PRODUCT</h5> 
+            <h5 class="price tag">PRICE</h5>         
+            <h5 class="quantity tag ">NO. OF DAYS</h5>
+            <h5 class="total tag">TOTAL</h5>
+        </div>
+        
+        <div class="products tag" >
+
+        </div>
+       
+       
+    </div>
+    <!-- <button id="place-order-btn">Place Order</button>  -->
+   
+    
+
+
+    <script src="/js/app.js"></script>
+    <script src="/js/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        window.onload = function() {
+    console.log("called onload inside index.html")
+  if (localStorage.getItem("isloggedin") == "true") {
+    document.getElementById("profile-nav").style.display = "flex"
+    document.getElementById("login-nav").style.display = "none"
+    // $("#logout-link").show();
+  } else {
+    // $("login-link").show();
+    document.getElementById("profile-nav").style.display = "none"
+    document.getElementById("login-nav").style.display = "flex"
+    // $("#register-link").show();
+  }
+};
+
+function loggedinfalse(){
+  localStorage.setItem("isloggedin", "false")
+}
+function forsell(){
+if(localStorage.getItem("isloggedin")=="true"){
+  location.href='/sell.html';
+} else{
+  alert("SignIn Required to post your product ");
+}
+}
+
+    </script>
+  
+    <script>
+
+
+    </script> 
+    
+</body>
+</html>

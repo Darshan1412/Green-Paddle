@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greenPaddle</title>
+    <script src="https://kit.fontawesome.com/e9b7245f45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/book.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div>
+        <img src="./image/PPE.gif" width="100%" class="giphy-embed" ></img>
+    </div>
+        
+    </div>
+ 
+    <navbar class="nav">
+        <img  src="/image/Green Paddle.jpeg" style="height: 70px; width: 100px; ">
+       
+        <ul id="header">
+            <li><a class="tag" href="/">Home</a></li>
+            <li><a class="tag" href="/explore">Explore</a></li>
+            <li><a class="tag" href="/book">Book</a></li>
+            <li><a class="tag" href="/ev.html">Ev</a></li>
+            <li><a class="tag" href="/accessories">Accessories</a></li>
+            <li><a class="tag" href="/faqs">Events</a></li>
+            <li><a class="tag" href="/contact">Contact Us</a></li>
+            <li ><a class="tag" href="views/login.html" id="login-nav" style="display: flex;">Login</a></li>
+            <li onclick="loggedinfalse()"><a class="tag" href="/" id="profile-nav" style="display: flex;">LogOut</a></li>
+            <li class="tag" onclick="forsell()">Post</li>
+            <li class="cart"><a class="tag" href="cart.html">Cart <span class="zero">0</span></a></li>
+           
+        </ul>
+    </navbar>
+    <button id="scrolltotop"><i class='bx bx-up-arrow-alt'></i></button>
+    
+    <div class="bookbc">
+        <div id="selectcycle">
+           <p style="font-family: Georgia, 'Times New Roman', Times, serif"> Select an Cycle</p>
+        
+        </div>
+      
+        <div >
+            <h1>Non-Geared</h1>
+            <div class="cycle ">
+                <div class="cycleimage">
+                    <img class="bi" src="./image/BTwin My Bike.png" alt="">
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">BTwin My Bike</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 60 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart1" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                    </div>
+                    <input type="hidden" value="60" />
+                </div>
+                <div class="cycleimage">
+                    <img class="bi" src="./image/Xtal Muse.png" alt="">
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Xtal Muse</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 60 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart2" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                    </div>
+                    <input type="hidden" value="60" />
+                </div>
+                <div class="cycleimage">
+                    <img src="./image/Hero Sprint Kyoto.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Hero Sprint Kyoto</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 70 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart3" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                    </div>
+                    <input type="hidden" value="70" />
+                </div>
+            </div>
+        <div >
+            <h1>Geared</h1>
+            <div class="cycle">
+                <div class="cycleimage">
+                    <img src="./image/Hero Sprint Rapid.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Hero Sprint Rapid</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 90 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart4" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                    </div>
+                    <input type="hidden" value="90" />
+                </div>
+                <div class="cycleimage">
+                    <img src="./image/Btwin Rockrider 300.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Btwin Rockrider 300</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 100 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart5" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                    </div>
+                    <input type="hidden" value="100" />
+                </div>
+                <div class="cycleimage">
+                    <img src="./image/Hercules Torrent VX.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Hercules Torrent VX</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 100 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart6" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                    </div>
+                    <input type="hidden" value="100" />
+                </div>
+            </div>
+
+        </div>
+        <div >
+            <h1>Electric</h1>
+            <div class="cycle">
+                <div class="cycleimage">
+                    <img src="./image/Powertrons Crampo.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Powertrons Crampo</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 180 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart7" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                    </div>
+                    
+                </div>
+                <div class="cycleimage">
+                    <img src="./image/Kionic.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Kionic</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 200 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart8" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                    </div>
+                    
+                
+            </div>
+
+        </div>
+        <div >
+            <h1>Premium</h1>
+            <div class="cycle">
+                <div class="cycleimage">
+                    <img src="./image/Giordano Viaggio.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Giordano Viaggio</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 250 / day</h4>
+                    <div class="proceed">
+                        <a class="add-cart cart9" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                    </div>
+                    
+                </div>
+                <div class="cycleimage">
+                    <img src="./image/Schwinn Twinn.png" alt="">
+                    
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Schwinn Twinn</h3><br>
+                    <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 300 / day</h4> 
+                    <div class="proceed">
+                        <a class="add-cart cart10" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                    </div>
+                    
+                
+            </div>
+
+        </div>
+
+        <div class="bookbc">
+            <div id="selectcycle">
+               <p style="font-family: Georgia, 'Times New Roman', Times, serif"> Select an Ev</p>
+            
+            </div>
+          
+            <div >
+                <h1>Scooters</h1>
+                <div class="cycle ">
+                    <div class="cycleimage">
+                        <img class="bi" src="./image/Ola S1.png" alt="">
+                        <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Ola S1</h3><br>
+                        <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 750 / day</h4>
+                        <div class="proceed">
+                            <a class="add-cart cart11" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                        </div>
+                        
+                    </div>
+                    <div class="cycleimage">
+                        <img class="bi" src="./image/Aether 450x.png" alt="">
+                        <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Aether 450x </h3><br>
+                        <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 700 / day</h4>
+                        <div class="proceed">
+                            <a class="add-cart cart12" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                        </div>
+                        
+                    </div>
+                    <div class="cycleimage">
+                        <img src="./image/Bajaj Chetak.png" alt="">
+                        
+                        <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Bajaj Chetak</h3><br>
+                        <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 650 / day</h4>
+                        <div class="proceed">
+                            <a class="add-cart cart13" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                        </div>
+                        
+                    </div>
+                    <div class="cycleimage">
+                        <img src="./image/Ampere Magnus Ex.png" alt="">
+                        
+                        <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Ampere Magnus Ex</h3><br>
+                        <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 600 / day</h4>
+                        <div class="proceed">
+                            <a class="add-cart cart14" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                        </div>
+                        
+                    </div>
+                    <div class="cycleimage">
+                        <img src="./image/Tvs Iqube.png" alt="">
+                        
+                        <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Tvs Iqube</h3><br>
+                        <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 650 / day</h4>
+                        <div class="proceed">
+                            <a class="add-cart cart15" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            <div >
+
+                <div >
+                    <h1>Bikes</h1>
+                    <div class="cycle ">
+                        <div class="cycleimage">
+                            <img class="bi" src="./image/Odysse Electric Evoqis" alt="">
+                            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Odysse Evoqis</h3><br>
+                            <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 900 / day</h4>
+                            <div class="proceed">
+                                <a class="add-cart cart16" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                            </div>
+                            
+                        </div>
+                        <div class="cycleimage">
+                            <img class="bi" src="./image/Ultraviolette F77.png" alt="">
+                            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Ultraviolette F77</h3><br>
+                            <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 950/ day</h4>
+                            <div class="proceed">
+                                <a class="add-cart cart17" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                            </div>
+                            
+                        </div>
+                        <div class="cycleimage">
+                            <img src= "./image/Matter Aera.webp"  alt="">
+                            
+                            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Matter Aera</h3><br>
+                            <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 800 / day</h4>
+                            <div class="proceed">
+                                <a class="add-cart cart18" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                            </div>
+                            
+                        </div>
+                        <div class="cycleimage">
+                            <img src="./image/Revolt Rv400.png" alt="">
+                            
+                            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Revolt Rv400</h3><br>
+                            <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 800 / day</h4>
+                            <div class="proceed">
+                                <a class="add-cart cart19" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                            </div>
+                            
+                        </div>
+                        <div class="cycleimage">
+                            <img src="./image/Kabira Km 3000.png"  alt="">
+                            
+                            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Kabira Km 3000</h3><br>
+                            <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 850 / day</h4>
+                            <div class="proceed">
+                                <a class="add-cart cart20" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <div >
+
+
+                    <div >
+                        <h1>Cars</h1>
+                        <div class="cycle ">
+                            <div class="cycleimage">
+                                <img class="bi" src="./image/Hyundai Ioniq6.png" alt="">
+                                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Hyundai Ioniq6</h3><br>
+                                <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 3000 / day</h4>
+                                <div class="proceed">
+                                    <a class="add-cart cart21" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                                </div>
+                                
+                            </div>
+                            <div class="cycleimage">
+                                <img class="bi" src="./image/MG ZS.png" alt="">
+                                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">MG ZS</h3><br>
+                                <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 2800 / day</h4>
+                                <div class="proceed">
+                                    <a class="add-cart cart22" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a> 
+                                </div>
+                                
+                            </div>
+                            <div class="cycleimage">
+                                <img src= "./image/Mahindra XUV 400.png"  alt="">
+                                
+                                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Mahindra XUV400</h3><br>
+                                <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 2800 / day</h4>
+                                <div class="proceed">
+                                    <a class="add-cart cart23" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                                </div>
+                                
+                            </div>
+                            <div class="cycleimage">
+                                <img src="./image/Kia EV6.png" alt="">
+                                
+                                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Kia EV6 </h3><br>
+                                <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 2400 / day</h4>
+                                <div class="proceed">
+                                    <a class="add-cart cart24" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                                </div>
+                                
+                            </div>
+                            <div class="cycleimage">
+                                <img src="./image/Tata Tigor.Ev.png"  alt="">
+                                
+                                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif">Tata Tigor.Ev</h3><br>
+                                <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">Rs - 2000 / day</h4>
+                                <div class="proceed">
+                                    <a class="add-cart cart25" href="#"><p style="font-family: Georgia, 'Times New Roman', Times, serif">Add to Cart</p></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    <div >
+    </div>
+
+  
+    <script src="/js/base.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+    <script>
+        window.onload = function() {
+    console.log("called onload inside index.html")
+  if (localStorage.getItem("isloggedin") == "true") {
+    document.getElementById("profile-nav").style.display = "flex"
+    document.getElementById("login-nav").style.display = "none"
+    // $("#logout-link").show();
+  } else {
+    // $("login-link").show();
+    document.getElementById("profile-nav").style.display = "none"
+    document.getElementById("login-nav").style.display = "flex"
+    // $("#register-link").show();
+  }
+};
+
+function loggedinfalse(){
+  localStorage.setItem("isloggedin", "false")
+}
+function forsell(){
+if(localStorage.getItem("isloggedin")=="true"){
+  location.href='/sell.html';
+} else{
+  alert("SignIn Required to post your product ");
+}
+}
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    
+</body>
+</html>

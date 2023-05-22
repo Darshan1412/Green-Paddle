@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greenPaddle</title>
+    <link rel="stylesheet" href="/css/accessories.css">
+    <link rel="stylesheet" href="/css/index.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<div id="preloader">
+    <div>
+    <img src="./image/PPE.gif" width="100%" class="giphy-embed" ></img>
+</div>
+    
+</div>
+
+
+<body>
+    
+    <navbar class="nav">
+        <img  src="/image/Green Paddle.jpeg" style="height: 70px; width: 100px; ">
+       
+      
+            <ul id="header">
+                <li><a class="tag" href="/">Home</a></li>
+                <li><a class="tag" href="/explore">Explore</a></li>
+                <li><a class="tag" href="/book">Book</a></li>
+                <li><a class="tag" href="/ev.html">Ev</a></li>
+                <li><a class="tag" href="/accessories">Accessories</a></li>
+                <li><a class="tag" href="/faqs">Events</a></li>
+                <li><a class="tag" href="/contact">Contact Us</a></li>
+                <li ><a class="tag" href="views/login.html" id="login-nav" style="display: flex;">Login</a></li>
+                <li onclick="loggedinfalse()"><a class="tag" href="/" id="profile-nav" style="display: flex;">LogOut</a></li>
+                <li class="tag" onclick="forsell()">Post</li>
+                <li class="cart"><a class="tag" href="cart.html">Cart <span class="zero">0</span></a></li>
+            </ul>
+    </navbar>
+    <button id="scrolltotop"><i class='bx bx-up-arrow-alt'></i></button>
+    <div class="accessories">
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif">Select the accessories from the below image to purchase it</h2>
+
+        <div id="img">
+            <img src="./image/cyclist.png" alt="Workplace" usemap="#workmap" width="667" height="525">
+        </div>
+
+        <map name="workmap">
+
+            <area id="bottle"  shape="poly" coords="289,330,303,348,346,302,329,284" alt="bottle"
+              target="_blank"  href="https://www.amazon.in/Strauss-ST-1347-Plastic-Bicycle-Bottle/dp/B07DHJQ2S1/ref=sr_1_2_sspa?crid=1IS1UAMWUTT5L&keywords=cycle+bottle+holder&qid=1638975823&sprefix=cycle+bottl%2Caps%2C386&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyRkxUUzQzNkZINU1JJmVuY3J5cHRlZElkPUEwODE0MzQ5Wks3OVNaUEdQNkRYJmVuY3J5cHRlZEFkSWQ9QTAzMTE4MjYxNEE2STM0MFdPWTAwJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+            <area shape="poly" coords="391,68,426,40,476,70,458,100" alt="helmet"
+            target="_blank" href="https://www.amazon.in/VICTGOAL-Bicycle-Mountain-Cycling-Removable/dp/B09BDYN631/ref=sr_1_2_sspa?keywords=cycle+helmet&qid=1638975774&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFERDA4NlBCTENYOFcmZW5jcnlwdGVkSWQ9QTA5MDk1NjYzOFpPWjIzSUFFRFVIJmVuY3J5cHRlZEFkSWQ9QTAxMTQwMjUyRDNCU1lNS1lLWUQwJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+            <area shape="poly" coords="393,246,444,276,471,228,418,220" alt="gloves"
+            target="_blank"  href="https://www.amazon.in/Burnlab-Gloves-Black-Blue-Small/dp/B07Q2ZW4W8/ref=d_pd_sbs_sccl_2_2/262-2912035-1656126?pd_rd_w=zJpKp&content-id=amzn1.sym.2db7fcb9-4c68-4d7a-84ce-450f877f4572&pf_rd_p=2db7fcb9-4c68-4d7a-84ce-450f877f4572&pf_rd_r=X03XWBRPRA5QHYPGJ4NC&pd_rd_wg=eFr2y&pd_rd_r=d028c35d-a5a6-4c81-bcdb-f46f68287f99&pd_rd_i=B07Q312WXB&th=1&psc=1">
+            <area shape="rect" coords="300,401,214,444" alt="shoes"
+            target="_blank"  href="https://www.amazon.in/Cycling-Ultralight-Comfortable-Auto-Lock-Bicycle/dp/B097Y41143/ref=sr_1_13?keywords=Bike+Riding+Shoes&qid=1666508197&qu=eyJxc2MiOiI3LjIyIiwicXNhIjoiNi40NiIsInFzcCI6IjMuOTcifQ%3D%3D&sr=8-13">
+            <area shape="circle" coords="435,394,103" alt="monkeylights"
+            target="_blank"  href="https://www.amazon.in/SAFETY-REFLECTIVE-SPOKES-SCOTCHLITE-TECHNOLOGY/dp/B079RK3TM7/ref=sr_1_10?crid=3UJP2LUY4PPL1&keywords=monkey+lights+bicycle&qid=1638975359&sprefix=monkey+lights%2Caps%2C369&sr=8-10">
+            <area shape="poly"
+                coords="155,459,106,437,84,401,74,372,78,336,120,286,161,274,199,283,222,300,225,340,220,362,221,401,209,442"
+                alt="monkeylights"
+                target="_blank"  href="https://www.amazon.in/SAFETY-REFLECTIVE-SPOKES-SCOTCHLITE-TECHNOLOGY/dp/B079RK3TM7/ref=sr_1_10?crid=3UJP2LUY4PPL1&keywords=monkey+lights+bicycle&qid=1638975359&sprefix=monkey+lights%2Caps%2C369&sr=8-10">
+        </map>
+        <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">You can purchase helmet , bottle-holder , cycling-shoes , monkeylights for tires , riding-gloves just by clicking on it.</h4>
+
+        
+
+    </div>
+   
+   
+  
+   
+    <script src="/js/cart.js"></script>
+    <script src="/js/base.js"></script>
+    <script src="/js/email.js"></script>
+    <script src="/js/index.js"></script>
+    <script>
+        window.onload = function() {
+    console.log("called onload inside index.html")
+  if (localStorage.getItem("isloggedin") == "true") {
+    document.getElementById("profile-nav").style.display = "flex"
+    document.getElementById("login-nav").style.display = "none"
+    // $("#logout-link").show();
+  } else {
+    // $("login-link").show();
+    document.getElementById("profile-nav").style.display = "none"
+    document.getElementById("login-nav").style.display = "flex"
+    // $("#register-link").show();
+  }
+};
+
+function loggedinfalse(){
+  localStorage.setItem("isloggedin", "false")
+}
+function forsell(){
+if(localStorage.getItem("isloggedin")=="true"){
+  location.href='/sell.html';
+} else{
+  alert("SignIn Required to post your product ");
+}
+}
+
+    </script>
+</body>
+
+</html>

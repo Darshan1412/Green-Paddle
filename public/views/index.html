@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+  
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$( "#form1" ).submit(function(event) {
+				event.preventDefault();
+
+				$.ajax({
+					type: 'POST',
+					url: '/auth',
+					data: $('#form1').serialize(),
+					dataType: "json",
+					success: function(response){
+						//alert("a");
+						//console.log(response.Success);
+						$('#form1')[0].reset();
+
+						document.getElementById("check").innerHTML=response.Success;
+         					//ADD THIS CODE
+         					setTimeout(function(){
+         						document.getElementById("check").innerHTML="";
+         					},3000);
+         					if (response.Success=="You are registered,You can login now.") {
+         						document.getElementById("aa").click();
+         					};
+         				},
+         				error: function() {
+         				}
+         			})
+			});
+		});
+
+// 		const contactForm=document.querySelector('.contact-form');
+
+// 		login.addEventListener(document.getElementById('register'),(e)=>{
+//         e.preventDefault();
+
+//     let registerdata={
+//         email: email.value,
+// 		username: username.value,
+// 		password: password.value,
+// 		passwordConf: passwordConf
+        
+
+//     }
+//     let xhr = new XMLHttpRequest();
+//     xhr.open('POST','/auth');
+//     xhr.setRequestHeader('content-type' , 'application/json');
+//      xhr.onload=function(){
+//         alert('Succesfully Registered')
+//     //     console.log(xhr.responseText);
+//     //     if(xhr.responseText == 'success'){
+//     //         alert('Email sent');
+//             email.value = '';
+// 			username.value = '';
+// 			password.value = '';
+// 			passwordConf = '';
+         
+//     //     }else{
+//     //         alert('Something went wrong')
+//     //     }
+//      }
+
+//     xhr.send(JSON.stringify(registerdata))
+// })
+
+
+		// $(document).ready(function(){
+
+		// 	$( "#form1" ).submit(function(event) {
+		// 		event.preventDefault();
+		// 		$.post('/auth',{
+		// 			email:"darshanjain2@gmail.com",
+		// 			username:"darshan",
+		// 			password:"123",
+		// 			passwordConf:"123"
+
+		// 		});
+		// 	}
+		// 	)}
+		// )
+
+	</script>
+</head>
+<body>
+
+	<div class="login col-md-4 col-md-offset-4">
+		<div>
+			<p>REGISTER NOW</p>
+		</div>
+		<div class="form-group">
+			<form id="form1" method="post">
+				<input id="email" type="email" name="email" placeholder="E-mail" required="" class="form-control"><br/>
+				<input id="username" type="text" name="username" placeholder="Username" required="" class="form-control"><br/>
+				<input id="password" type="password" name="password" placeholder="Password" required="" class="form-control"><br/>
+				<input id="passwordConf" type="password" name="passwordConf" placeholder="Confirm Password" required="" class="form-control"><br/>
+				<input  id="register" type="submit" value="Register" class="btn btn-success">
+			</form>
+		</div>
+		
+		<div class="mssg bg-danger">
+			<span id="check"></span>
+		</div>
+		<div class="some">
+			<span>Already Registered!<a href="/login"> &nbsp;  Login</a></span>
+		</div>
+		<div id="LangTable"><a href="/login" id="aa"></a>
+		</div>
+	</div>
+</body>
+</html>
