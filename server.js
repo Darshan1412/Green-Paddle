@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://darshan:darshanjain1412@greenpaddle.dsqvgnm.mong
 const env = require('dotenv').config();
 var ejs = require('ejs');
 // const Razorpay = require('razorpay');
+const routes = require('./routes')
 const authroute = require('/GreenPaddle/routes/index.js')
 const user = require('/GreenPaddle/models/user.js')
 const port = process.env.PORT || 80
