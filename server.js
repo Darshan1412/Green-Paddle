@@ -12,8 +12,8 @@ var ejs = require('ejs');
 // const Razorpay = require('razorpay');
 const router = express.Router();
 const routes = require('./routes')
-const authroute = require('/GreenPaddle/routes/index.js')
-const user = require('/GreenPaddle/models/user.js')
+const authroute = require('D:/GreenPaddle/routes/index.js')
+const user = require('D:/GreenPaddle/models/user.js')
 const serverless = require("serverless-http");
 const port = process.env.PORT || 80
 
