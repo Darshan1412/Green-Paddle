@@ -10,9 +10,11 @@ const stripe = require('stripe');
 const env = require('dotenv').config();
 var ejs = require('ejs');
 // const Razorpay = require('razorpay');
+const router = express.Router();
 const routes = require('./routes')
 const authroute = require('/GreenPaddle/routes/index.js')
 const user = require('/GreenPaddle/models/user.js')
+const serverless = require("serverless-http");
 const port = process.env.PORT || 80
 
 // const instance = new Razorpay({
@@ -26,6 +28,10 @@ const port = process.env.PORT || 80
 // app.use(express.static("public"))
 // var express = require('express');
 // var app = express();
+
+app.use(`/.netlify/functions/api`, router);
+module.exports = app;
+module.exports.handler = serverless(app);
 
 var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;

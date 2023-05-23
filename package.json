@@ -25,6 +25,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^4.11.0",
     "mongoose": "^6.10.5",
+    "netlify": "^13.1.7",
     "nodemailer": "^6.7.2",
     "razorpay": "^2.8.6",
     "session": "^0.1.0",
