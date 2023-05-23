@@ -12,7 +12,7 @@ var ejs = require('ejs');
 // const Razorpay = require('razorpay');
 const authroute = require('D:/GreenPaddle/routes/index.js')
 const user = require('D:/GreenPaddle/models/user.js')
-const port = 80;
+const port = process.env.PORT
 
 // const instance = new Razorpay({
 //     key_id: 'rzp_test_qCbga03jedC1C5',
@@ -323,7 +323,7 @@ const mailOptions={
 });
 
 //app.listen
-app.listen(port, ()=>{
-    console.log(`Server running on port ${port}`);
+app.listen(process.env.PORT, ()=>{
+    console.log(`Server running on port ${process.env.PORT}`);
 });
 
