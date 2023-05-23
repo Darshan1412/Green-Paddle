@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const bodyparser = require("body-parser");
 const { request } = require("http");
 const stripe = require('stripe');
-mongoose.connect('mongodb+srv://darshan:darshanjain1412@greenpaddle.dsqvgnm.mongodb.net/test', {useNewUrlParser:true});
+// mongoose.connect('mongodb+srv://darshan:darshanjain1412@greenpaddle.dsqvgnm.mongodb.net/test', {useNewUrlParser:true});
 const env = require('dotenv').config();
 var ejs = require('ejs');
 // const Razorpay = require('razorpay');
