@@ -14,7 +14,7 @@ const router = express.Router();
 const routes = require('./routes')
 const authroute = require('D:/GreenPaddle/routes/index.js')
 const user = require('D:/GreenPaddle/models/user.js')
-const serverless = require("serverless-http");
+// const serverless = require("serverless-http");
 const port = process.env.PORT || 80
 
 // const instance = new Razorpay({
@@ -29,9 +29,9 @@ const port = process.env.PORT || 80
 // var express = require('express');
 // var app = express();
 
-app.use(`/.netlify/functions/api`, router);
-module.exports = app;
-module.exports.handler = serverless(app);
+// app.use(`/.netlify/functions/api`, router);
+// module.exports = app;
+// module.exports.handler = serverless(app);
 
 var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
