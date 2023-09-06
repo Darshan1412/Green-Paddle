@@ -13,7 +13,6 @@ var ejs = require('ejs');
 const router = express.Router();
 const routes = require('./routes')
 const authroute = require('./routes/index') 
-const user = require('D:/GreenPaddle/models/user.js')
 // const serverless = require("serverless-http");
 const port = process.env.PORT || 80
 
