@@ -45,7 +45,7 @@ var db;
 
 
 
-mongoose.connect(mongoUrl, {
+mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, (err) => {
