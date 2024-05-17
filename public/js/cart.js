@@ -371,7 +371,7 @@ const placeOrderBtn = document.querySelector('.place-order-btn');
 placeOrderBtn.addEventListener('click',(e) => {
 console.log(localStorage.getItem('totalCost'))
     var options = {
-    "key": process.env.RAZORPAY_KEY_ID, // Enter the Key ID generated from the Dashboard
+    "key": "rzp_test_nPLlEBLkQlnS6H", // Enter the Key ID generated from the Dashboard
     "amount": JSON.parse(localStorage.getItem('totalCost'))*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     "currency": "INR",
     "name": "Green Paddle",
