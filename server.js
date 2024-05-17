@@ -9,17 +9,17 @@ const stripe = require('stripe');
 // mongoose.connect('mongodb+srv://darshan:darshanjain1412@greenpaddle.dsqvgnm.mongodb.net/test', {useNewUrlParser:true});
 const env = require('dotenv').config();
 var ejs = require('ejs');
-const Razorpay = require('razorpay');
+// const Razorpay = require('razorpay');
 const router = express.Router();
 const routes = require('./routes')
 const authroute = require('./routes/index') 
 // const serverless = require("serverless-http");
 const port = process.env.PORT || 80
 
-const instance = new Razorpay({
-    key_id: process.env.RAZORPAY_KEY_ID,
-    key_secret: process.env.RAZORPAY_KEY_SECRET,
-  });
+// const instance = new Razorpay({
+//     key_id: process.env.RAZORPAY_KEY_ID,
+//     key_secret: process.env.RAZORPAY_KEY_SECRET,
+//   });
   
 
 // app.use(cors());
