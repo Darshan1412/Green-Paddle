@@ -371,7 +371,7 @@ const placeOrderBtn = document.querySelector('.place-order-btn');
 placeOrderBtn.addEventListener('click',(e) => {
 console.log(localStorage.getItem('totalCost'))
     var options = {
-    "key": "rzp_test_qCbga03jedC1C5", // Enter the Key ID generated from the Dashboard
+    "key": "rzp_test_JnrdkaGJrXzcYi", // Enter the Key ID generated from the Dashboard
     "amount": JSON.parse(localStorage.getItem('totalCost'))*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     "currency": "INR",
     "name": "Green Paddle",
@@ -380,8 +380,8 @@ console.log(localStorage.getItem('totalCost'))
     "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
     "handler": function (response){
         alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature)
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature)
 
         var settings = {
             "url": "/api/payment/verify",

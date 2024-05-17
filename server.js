@@ -9,17 +9,17 @@ const stripe = require('stripe');
 // mongoose.connect('mongodb+srv://darshan:darshanjain1412@greenpaddle.dsqvgnm.mongodb.net/test', {useNewUrlParser:true});
 const env = require('dotenv').config();
 var ejs = require('ejs');
-// const Razorpay = require('razorpay');
+const Razorpay = require('razorpay');
 const router = express.Router();
 const routes = require('./routes')
 const authroute = require('./routes/index') 
 // const serverless = require("serverless-http");
 const port = process.env.PORT || 80
 
-// const instance = new Razorpay({
-//     key_id: process.env.RAZORPAY_KEY_ID,
-//     key_secret: process.env.RAZORPAY_KEY_SECRET,
-//   });
+const instance = new Razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_KEY_SECRET,
+  });
   
 
 // app.use(cors());
@@ -247,18 +247,28 @@ var myData = new Info({
 })
 })
 
-app.post('/create/orderId', async(req, res)=>{
-    var options = {
-        amount: req.body.amount,  // amount in the smallest currency unit
-        currency: "INR",
-        receipt: "rcp1"
-      };
-      instance.orders.create(options, function(err, order) {
-        console.log(order);
-        res.send({order : order.id});
-      });
-      
-})
+app.post('/create/orderId', async(req, res) => {
+    try {
+        const options = {
+            amount: req.body.amount,  // amount in the smallest currency unit
+            currency: "INR",
+            receipt: "rcp1"
+        };
+        instance.orders.create(options, function(err, order) {
+            if (err) {
+                console.error("Error creating order:", err);
+                res.status(500).send({ error: "Failed to create order" });
+            } else {
+                console.log("Order created:", order);
+                res.send({ order: order.id });
+            }
+        });
+    } catch (error) {
+        console.error("Error creating order:", error);
+        res.status(500).send({ error: "Failed to create order" });
+    }
+});
+
 
 app.post("/api/payment/verify",(req,res)=>{
 
