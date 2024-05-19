@@ -8,6 +8,15 @@ Welcome to GreenPaddle! This project is a bicycle and electric vehicle rental pl
 - **Database:** MongoDB
 - **Payment Gateway:** Razorpay
 
+## Features
+- **Bicycle Rental:** Users can choose from a wide variety of bicycles for rent.
+- **Electric Vehicle Rental:** Explore electric vehicles as a sustainable transportation option.
+- **Accessories:** Purchase accessories to enhance your biking experience.
+- **Routes:** Discover routes for biking adventures.
+- **Contact Us:** Get in touch with us for inquiries and support.
+- **Events:** Stay updated on biking events and community gatherings.
+- **Peer-to-Peer Rental:** Users can also offer their own electric vehicles and bicycles for rent to others.
+
 ## Getting Started
 1. Clone this repository to your local machine.
 2. Install Node.js if you haven't already.
@@ -32,11 +41,3 @@ Welcome to GreenPaddle! This project is a bicycle and electric vehicle rental pl
 7. Run `npm start` to start the server.
 8. Visit `http://localhost:80` in your web browser to access the website.
 
-## Features
-- **Bicycle Rental:** Users can choose from a wide variety of bicycles for rent.
-- **Electric Vehicle Rental:** Explore electric vehicles as a sustainable transportation option.
-- **Accessories:** Purchase accessories to enhance your biking experience.
-- **Routes:** Discover routes for biking adventures.
-- **Contact Us:** Get in touch with us for inquiries and support.
-- **Events:** Stay updated on biking events and community gatherings.
-- **Peer-to-Peer Rental:** Users can also offer their own electric vehicles and bicycles for rent to others.
