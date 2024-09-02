@@ -13,6 +13,7 @@ const Razorpay = require('razorpay');
 const router = express.Router();
 const routes = require('./routes')
 const authroute = require('./routes/index') 
+const  cron = require("node-cron");
 // const serverless = require("serverless-http");
 const port = process.env.PORT || 80
 
@@ -60,6 +61,11 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
 });
+
+cron.schedule('* * * * *', () => {
+    console.log('Hello World');
+  });
+  
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));

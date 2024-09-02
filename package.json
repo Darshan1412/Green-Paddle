@@ -27,6 +27,7 @@
     "mongodb": "^4.11.0",
     "mongoose": "^6.10.5",
     "netlify": "^13.1.7",
+    "node-cron": "^3.0.3",
     "nodemailer": "^6.7.2",
     "razorpay": "^2.8.6",
     "serverless": "^3.32.1",
