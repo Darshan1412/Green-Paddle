@@ -62,7 +62,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
 });
 
-cron.schedule('* * * * *', () => {
+cron.schedule('*/20 * * * *', () => {
     console.log('Hello World');
   });
   
